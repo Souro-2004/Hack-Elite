@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\CSS\homeStyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+
+    <style>
+       body
+       {
+        margin: 0;
+       }
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+          visibility: hidden;
+          width: 220px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
+</head>
+<body>
+    <!-- 
+      <div class="popup" >
+        <input type="text" id="fname" placeholder="Enter text" name="fname">
+        <button onclick="s()">result</button>
+        <p class="popuptext" id="result"></p>
+      </div>
+    -->
+
+    <script src = "search.js"></script>
+    <h1><b><u>PORTFOLIO</u></b></h1>
+    <img class = "tanya" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\TanyaPhoto.jpeg" alt="TanyaPhoto">
+    <img class = "karthik" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\KarthikPhoto.jpeg" alt="KarthikPhoto">
+    <img class = "sourojit" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\SourojitPhoto.jpg" alt="SourojitPhoto">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="homeTanya">Tanya</h2>
+    <h2 class="homeKarthik">Karthik</h2>
+    <h2 class="homeSourojit">Sourojit</h2>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <hr>
+        <p class = "footer-link"><a class = "feedback" href="">Feedback</a><a class = "email" href="">Email</a></p>
+        <br>
+        <p class = "copyright">&copy; Made by Hack Elite</p>
+    </div>
+</body>
+</html>
