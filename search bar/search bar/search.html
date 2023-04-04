@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Popup container - can be anything you want */
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup .popuptext {
+          visibility: hidden;
+          width: 220px;   /* actual*/
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: -100%;/**/
+          left: 140%;
+          margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 50%;/*100 70*/
+          left: -31%;/*50 -29*/
+          margin-left: 60px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+          transform: rotate(90deg) ;/*added*/
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;} 
+          to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
+        </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <div class="popup" >
+        <input type="text" id="fname" placeholder="Question" name="fname">
+        <button onclick="s()">result</button>
+        <p class="popuptext" id="result"></p>
+    </div>
+    <script src = "search.js"></script>
+    <br>
+    <br>
+    
+
+</body>
+</html>
