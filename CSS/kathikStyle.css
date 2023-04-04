@@ -1,0 +1,53 @@
+body
+{
+    background-color:beige;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img
+{
+    height: 200px;
+    width: 200px;
+    float: left;
+    border-radius: 100%;
+    margin-right: 40px;
+    shape-outside: circle();
+}
+
+p
+{
+    margin-top: 0;
+}
+
+hr
+{
+    border-style:none;
+    border-top-style:dotted;
+    border-color:grey;
+    border-width: 5px;
+    width: 3%;
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    color:green;
+    margin-bottom: 0;
+}
+
+.education
+{
+    clear: left;
+    margin-left: 800px;
+}
+
+.intro
+{
+    width: 65%;
+    line-height: 2;
+}
+
+.heading
+{
+    padding-left: 10px;
+}

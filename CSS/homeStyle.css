@@ -1,0 +1,157 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #FA7070;
+    color: #FBF2CF;
+    margin: 0;
+}
+
+img
+{
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 15%;
+}
+
+
+
+p
+{
+    width: 25%;
+    display: inline-block;
+    line-height: 2;
+
+}
+
+a
+{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h1
+{
+    text-align: left;
+    padding-left: 100px;
+    margin-left: 0;
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #A1C298;
+    background-color: #FBF2CF;
+}
+
+h2
+{
+    color: #A1C298;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .mail-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-wrapper:hover .mail-icon {
+    opacity: 1;
+  }
+  
+  .image-wrapper:hover img {
+    opacity: 0.7;
+  }
+  
+  .fa {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .fa-envelope {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  
+.tanya
+{
+    position: absolute;
+    left: 250px;
+}
+
+.karthik
+{
+    position: absolute;
+    left: 640px;
+}
+
+.sourojit
+{
+    position: absolute;
+    left: 1018px;
+}
+
+.homeTanya
+{
+    position: absolute;
+    left: 330px;
+}
+
+.homeKarthik
+{
+    position: absolute;
+    left: 725px;
+}
+
+.homeSourojit
+{
+    position: absolute;
+    left: 1090px;
+}
+
+.footer
+{
+    background-color: #FBF2CF;
+    color: #A1C298;
+}
+
+.copyright
+{
+    margin: auto 0;
+    font-size: 15px;
+}
+
+.footer-link
+{
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+    color: #A1C298;
+}
+
+.feedback
+{
+    display: inline-block;
+    width: 70px;
+
+}
+
+.email
+{
+    display: inline-block;
+    width: 70px;
+}
+
+.popup
+{
+    margin-left: 1070px;
+}
