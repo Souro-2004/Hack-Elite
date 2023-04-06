@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\CSS\homeStyle.css">
+    <!--<link rel="stylesheet" href="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\CSS\homeStyle.css">-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,72 +17,258 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Portfolio</title>
 
     <style>
-       body
-       {
-        margin: 0;
-       }
-        /* Popup container - can be anything you want */
-        .popup {
-          position: relative;
-          display: inline-block;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-        }
-
-        /* The actual popup */
-        .popup .popuptext {
-          visibility: hidden;
-          width: 220px;
-          background-color: #555;
-          color: #fff;
+      body
+      {
+          font-family: 'Montserrat', sans-serif;
           text-align: center;
-          border-radius: 6px;
-          padding: 8px 0;
+          background-color: #f7efda;
+          color: #96802a;
+          margin: 0;
+      }
+
+      img
+      {
+          margin-top: 50px;
+          height: 250px;
+          width: 250px;
+          border-radius: 15%;
+      }
+
+
+
+      p
+      {
+          width: 25%;
+          display: inline-block;
+          line-height: 2;
+
+      }
+
+      a
+      {
+          font-size: 15px;
+          text-decoration: none;
+      }
+
+      .portfolio-icon
+      {
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        border-radius: 100%;
+        display: inline-block;
+      }
+
+      h1
+      {
+          text-align: left;
+          padding-left: 10px;
+          margin-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-family: 'Montserrat', sans-serif;
+          color: #f59300;
+          background-color: #FBF2CF;
+      }
+
+      h2
+      {
+          color: #f59300;
+      }
+
+      .image-wrapper {
+        position: relative;
+        display: inline-block;
+        padding: 50px;
+      }
+
+      .icons-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .image-wrapper:hover .icons-wrapper 
+      {
+        opacity: 1;
+      }
+
+      .fa {
+        font-size: 24px;
+        color: #fff;
+      }
+
+      .fa-envelope {
+        background-color: #007bff;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .fa-whatsapp {
+        background-color: #25d366;
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .image-wrapper img {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .image-wrapper:hover img {
+        opacity: 0.7;
+      }
+
+      .tanya
+      {
           position: absolute;
-          z-index: 1;
-          bottom: 125%;
-          left: 50%;
-          margin-left: -80px;
-        }
+          left: 210px;
+      }
 
-        /* Popup arrow */
-        .popup .popuptext::after {
-          content: "";
+      .karthik
+      {
           position: absolute;
-          top: 100%;
-          left: 50%;
-          margin-left: -5px;
-          border-width: 5px;
-          border-style: solid;
-          border-color: #555 transparent transparent transparent;
-        }
+          left: 595px;
+      }
 
-        /* Toggle this class - hide and show the popup */
-        .popup .show {
-          visibility: visible;
-          -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-        }
+      .sourojit
+      {
+          position: absolute;
+          left: 973px;
+      }
 
-        /* Add animation (fade in the popup) */
-        @-webkit-keyframes fadeIn {
-          from {opacity: 0;} 
-          to {opacity: 1;}
-        }
+      .homeTanya
+      {
+          position: absolute;
+          left: 330px;
+      }
 
-        @keyframes fadeIn {
-          from {opacity: 0;}
-          to {opacity:1 ;}
-        }
-        </style>
+      .homeKarthik
+      {
+          position: absolute;
+          left: 725px;
+      }
+
+      .homeSourojit
+      {
+          position: absolute;
+          left: 1090px;
+      }
+
+      .footer
+      {
+          background-color: #FBF2CF;
+          color: #A1C298;
+      }
+
+      .copyright
+      {
+          margin: auto 0;
+          font-size: 15px;
+      }
+
+      .footer-link
+      {
+          margin: 0 auto;
+          position: relative;
+          left: 10px;
+          text-decoration: none;
+          color: #A1C298;
+      }
+
+      .feedback
+      {
+          display: inline-block;
+          width: 70px;
+
+      }
+
+      .email
+      {
+          display: inline-block;
+          width: 70px;
+      }
+
+      .popup
+      {
+          margin-left: 1070px;
+      }
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 220px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+      }
+
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      .carousel-item
+      {
+        height: 32rem;
+        background-color: #555;
+      }
+
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+    </style>
 </head>
 <body>
+  
     <!-- 
       <div class="popup" >
         <input type="text" id="fname" placeholder="Enter text" name="fname">
@@ -90,10 +278,74 @@
     -->
 
     <script src = "search.js"></script>
-    <h1><b><u>PORTFOLIO</u></b></h1>
-    <img class = "tanya" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\TanyaPhoto.jpeg" alt="TanyaPhoto">
-    <img class = "karthik" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\KarthikPhoto.jpeg" alt="KarthikPhoto">
-    <img class = "sourojit" src="C:\Users\Sourojit\OneDrive\Desktop\AtrangHackathon2023\Photos\SourojitPhoto.jpg" alt="SourojitPhoto">
+      <h1><b><u><img class="portfolio-icon" src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\portfolio icon.png">PORTFOLIO</u></b></h1>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+            <img class="d-block w-50 h-50" src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\achievements.jpeg" alt="Achievements">
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <img class="d-block w-50 h-50" src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\education.jpg" alt="Education">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+            <img class="d-block w-50 h-50" src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\hobbies.png" alt="Hobbies">
+          </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="image-wrapper tanya">
+        <img src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\TanyaPhoto.jpeg" alt="Tanya's Image">
+        <div class="icons-wrapper">
+          <div class="mail-icon">
+            <a href="mailto:221250@iiitt.ac.in"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="whatsapp-btn">
+            <a href="https://wa.me/6201358772"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper karthik">
+        <img src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\KarthikPhoto.jpeg" alt="Karthik's Image">
+        <div class="icons-wrapper">
+          <div class="mail-icon">
+            <a href="mailto:221225@iiitt.ac.in"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="whatsapp-btn">
+            <a href="https://wa.me/9940361849"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="image-wrapper sourojit">
+        <img src="C:\Users\Sourojit\Documents\AtrangHackathon\Photos\SourojitPhoto.jpeg" alt="Sourojit's Image">
+        <div class="icons-wrapper">
+          <div class="mail-icon">
+            <a href="mailto:221249@iiitt.ac.in"><i class="fa fa-envelope"></i></a>
+          </div>
+          <div class="whatsapp-btn">
+            <a href="https://wa.me/9748222341"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
     <br>
     <br>
     <br>
@@ -109,14 +361,16 @@
     <br>
     <br>
     <br>
-    <h2 class="homeTanya">Tanya</h2>
-    <h2 class="homeKarthik">Karthik</h2>
-    <h2 class="homeSourojit">Sourojit</h2>
     <br>
     <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales risus quam, at luctus velit dignissim eget. Pellentesque a pellentesque eros. Suspendisse ornare, ligula fringilla congue scelerisque, leo sapien euismod dui, vitae egestas mi ligula quis purus. Phasellus justo ex.</p>
+    <a href="C:\Users\Sourojit\Documents\AtrangHackathon\Tanya.html"><h2 class="homeTanya">Tanya</h2></a>
+    <a href="C:\Users\Sourojit\Documents\AtrangHackathon\Karthik.html"><h2 class="homeKarthik">Karthik</h2></a>
+    <a href="C:\Users\Sourojit\Documents\AtrangHackathon\Sourojit.html"><h2 class="homeSourojit">Sourojit</h2></a>
+    <br>
+    <br>
+    <p>I am an enthusiastic student willing to learn new technologies and gain experience through them but to be honest, Badminton is my true love. Outside college hours, that is what you will often find me playing.</p>
+    <p>I am very excited to explore more about the existing fields and dive into knowing more and contributing in them. you can ask my friends, they will testify that I am quite good at Table Tennis.</p>
+    <p>I am a student interested to learn and gain experience in the fields of technology and explore more creative talents in me. I know studying everytime is boring, so a little bit of singing now and then refreshes me.</p>
     <br>
     <br>
     <br>
@@ -125,9 +379,13 @@
     <br>
     <div class="footer">
         <hr>
-        <p class = "footer-link"><a class = "feedback" href="">Feedback</a><a class = "email" href="">Email</a></p>
+        <p class = "footer-link"><a class = "feedback" href="C:\Users\Sourojit\Documents\AtrangHackathon\Feedback.html">Feedback</a><a class = "email" href="mailto:221249@iiitt.ac.in">Email</a></p>
         <br>
         <p class = "copyright">&copy; Made by Hack Elite</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
