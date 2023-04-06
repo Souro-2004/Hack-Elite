@@ -7,7 +7,7 @@
 <body>
 	<div class="container">
 		<h2>Feedback Form</h2>
-		<form method="POST">
+		<form action = "results.html" method="GET">
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" required>
 
@@ -20,20 +20,5 @@
 			<input type="submit" value="Submit" onclick="submitf()">
 		</form>
 	</div>
-<script>
-function submitf(){
-fname=document.getElementById("name").value;
-femail=document.getElementById("email").value;
-ffd=document.getElementById("feedback").value;
-const fs = require("fs");
-m=fname + " ,\n" + femail + " ,\n" + ffd + " .\n------------\n" ;
-fs.writeFile("./feedback.txt", m , (err) => {
-if (err) {
-    console.error(err);
-  }
-});
-location.replace("C:\Users\Sourojit\Documents\AtrangHackathon\index.html");
-}
-</script>
 </body>
 </html>
